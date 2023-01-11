@@ -1,28 +1,29 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 theme = 'graysx'
-title = 'Example Graysx Site'
+title = 'Welcome to Magic Inn'
 
 ## Site Settings
-[params]
+
 logo = "assets/img/logo.webp"
 favicon = "assets/favicon.png"
 
 # Info
-address = "123 Arch B1W, GNU/Linux"
-email = "hello@graysx.com"
-phone = "123456"
+
+address = "Prague, Czech Republic"
+email = "magicinn.dev@gmail.com"
+phone = "+16692138392"
 
 # Socials
 
 twitter = "#"
 facebook = "#"
-github = "https://github.com/akatiggerx04/graysx-hugo"
+
 
 # Other
 
 # Startbootstrap Contact Form Token https://startbootstrap.com/solution/contact-forms
-sbtoken = "TOKEN_HERE"
+sbtoken = " "
 
 ## Menu Items
 [menu]

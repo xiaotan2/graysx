@@ -1,4 +1,3 @@
-/* Original Start Bootstrap's CSS */
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
@@ -61,7 +60,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, ;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -127,7 +126,8 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-family: "Vollkorn";
   }
 }
 
@@ -3035,32 +3035,32 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #a873e6;
+  border-color: #a873e6;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+  background-color: #bd9ae6;
+  border-color: #bd9ae6;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+  background-color: #bd9ae6;
+  border-color: #a873e6;
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #50817e;
-  border-color: #4b7976;
+  background-color: #a873e6;
+  border-color: #bd9ae6;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(189, 154, 230, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #a873e6;
+  border-color: #a873e6;
 }
 
 .btn-secondary {
@@ -4559,7 +4559,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.55);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(0, 0, 0, 0.7);
@@ -7961,6 +7961,8 @@ textarea.form-control-lg {
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
+  font-size: large;
+  font-family: "Montserrat";
 }
 
 .text-reset {
@@ -11475,7 +11477,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #000;
+  background-color: #FFF;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11521,29 +11523,30 @@ body {
     color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: #FFF;
   }
   #mainNav.navbar-shrink {
     background-color: #000;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    color: #FFF;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #fff;
+    color: #FFF;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
+  /* original color in the hover #64a19d to replace #a873e6 */
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #a873e6;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #784bad;  /* #046737 to #784bad  */
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #a873e6;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #a873e6;
   }
 }
 
@@ -11563,14 +11566,15 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/cover_image_background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
+/* Font change: Varela Round to  */
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Vollkorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -11580,6 +11584,7 @@ body {
           background-clip: text;
 }
 .masthead h2, .masthead .h2 {
+  font-family: "Montserrat";
   max-width: 20rem;
   font-size: 1rem;
 }
@@ -11607,7 +11612,8 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: var(--bs-black)
+  /*linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);*/
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11622,7 +11628,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #a873e6;
   }
 }
 .projects-section .project-text {
@@ -11634,7 +11640,7 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #a873e6;
     border-width: 0.25rem;
     width: 30%;
   }
@@ -11642,7 +11648,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/worldmap.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11673,7 +11679,7 @@ body {
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #a873e6;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -11698,11 +11704,4 @@ body {
 
 .footer {
   padding: 5rem 0;
-}
-
-/* graysx css */
-
-.about-btn {
-  margin-top: -50px;
-  margin-bottom: 20px;
 }

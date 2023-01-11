@@ -30,21 +30,23 @@
                         {{ end }}
                     </div>
                 </div>
-                <img class="img-fluid" src="{{ .image }}" alt="..." />
+                <div style="position: relative; padding-bottom: 71%; height: 0; overflow: hidden;">
+                    <iframe src="https://www.youtube.com/embed/nW7DvNVF-y4" style="position: absolute; top: 0; left: 0; width: 95%; height: 90%; border:0;;" allowfullscreen title="YouTube Video"></iframe>
+                </div>
             </div>
         </section>
         {{ end }}
         <!-- Projects-->
         {{ with site.Data.homepage.projects }}
-        <section class="projects-section bg-light" id="projects">
+        <section class="projects-section bg-black" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .card1.img }}" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid" src="{{ .card1.img }}" alt="Welcoming" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>{{ .card1.title }}</h4>
-                            <p class="text-black-50 mb-0">{{ .card1.text }}</p>
+                            <h4 class="text-white mb-0">{{ .card1.title }}</h4>
+                            <p class="text-white-50 mb-0">{{ .card1.text }}</p>
                         </div>
                     </div>
                 </div>
@@ -78,6 +80,51 @@
                         </div>
                     </div>
                 </div>
+                  <!-- Project Three Row-->
+                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{ .card4.img }}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">{{ .card4.title }}</h4>
+                                    <p class="mb-0 text-white-50">{{ .card4.text }}</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project Four Row-->
+                 <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{ .card5.img }}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">{{ .card5.title }}</h4>
+                                    <p class="mb-0 text-white-50">{{ .card5.text }}</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Three Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{ .card6.img }}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">{{ .card6.title }}</h4>
+                                    <p class="mb-0 text-white-50">{{ .card6.text }}</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         {{ end }}
@@ -88,7 +135,7 @@
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="{{ site.Params.sbtoken }}">
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="7614d26a-e334-4594-8262-021008963db7">
                             <div class="row input-group-newsletter">
                                 <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
                                 <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
@@ -144,7 +191,7 @@
                 <div class="social d-flex justify-content-center">
                     <a class="mx-2" href="{{ site.Params.twitter }}"><i class="fab fa-twitter"></i></a>
                     <a class="mx-2" href="{{ site.Params.facebook }}"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="{{ site.Params.github }}"><i class="fab fa-github"></i></a>
+                    <a class="mx-2" href="{{ site.Params.discord }}"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
         </section>
